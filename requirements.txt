@@ -1,2 +1,2 @@
 pytest
-tensorflow
+tensorflow<1.9.9
