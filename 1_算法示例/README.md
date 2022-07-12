@@ -5,8 +5,11 @@
 1. 按 `CTRL + P` 打开命令行面板，输入 "terminal: Create New Terminal" 打开一个命令行终端.
 2. 在命令行里输入 `cd 1_算法示例` 并按 `ENTER` 进入"算法示例"目录。
 3. 在命令行里输入 `pyenv activate my-env` 并按 `ENTER` 激活环境。
-3. 在命令行里输入 `python QAtrain_weights.py --data_path=./tasks_1-20_v1-2/en/ --model=small --ifcontinue=False --data_type=1` 按 `ENTER` 运行训练程序。
-4. 在命令行里输入 `python QAanswer.py --data_path=./tasks_1-20_v1-2/en/ --model=small --data_type=1` 按 `ENTER` 运行测试程序。
+4. 在命令行里输入 `python QAtrain_weights.py --data_path=./tasks_1-20_v1-2/en/ --model=small --ifcontinue=False --data_type=1` 按 `ENTER` 运行训练程序。
+5. 在命令行里输入 `python QAanswer.py --data_path=./tasks_1-20_v1-2/en/ --model=small --data_type=1` 按 `ENTER` 运行测试程序。
+6. 在命令行里输入 `John went back to the bathroom.
+Mary travelled to the bathroom.
+Where is John?` 按两次`ENTER`  查询结果。
 
 
 #### 训练模型： ####
@@ -32,9 +35,9 @@ data_type：和训练设置的一致
 John went back to the bathroom.
 Mary travelled to the bathroom.
 Where is John?
-(此处是一个空行,用来区分问题,直接回车)
+(此处是一个空行,用来区分问题,按两次回车)
 
-# 回答问题
+# 结果
 try to answer
 The Question answer is:  bathroom
 ```
