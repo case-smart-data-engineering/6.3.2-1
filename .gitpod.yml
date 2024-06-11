@@ -9,7 +9,7 @@ tasks:
       pyenv virtualenv 3.6.0 my-env
       pyenv activate my-env
       pip install --upgrade pip
-      pip install tensorflow==1.14
+      pip install tensorflow
       exit
 
 vscode:
