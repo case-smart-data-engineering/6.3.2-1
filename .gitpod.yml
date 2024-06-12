@@ -7,7 +7,6 @@ tasks:
       pip install -r requirements.txt
       pyenv install 3.6.0
       pip install --upgrade pip
-      pip install tensorflow
       exit
 
 vscode:
