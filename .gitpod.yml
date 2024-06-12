@@ -1,46 +1,23 @@
-# # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
-# # 使用一个带有 Python 3.6 的预构建镜像
-# image:
-#        gitpod/workspace-full:latest
-# tasks:
-#   - name: "install requirements"
-#     command: |
-#       # 更新 pip
-#       pip install -U pip
-#       # 安装 pyenv 并安装 Python 3.6.9
-#       pyenv install 3.6.9
-#       # 切换到 Python 3.6.9
-#       pyenv global 3.6.9
-#       # 再次更新 pip
-#       pip install -U pip
-#       # 安装 yapf 格式化工具
-#       pip install yapf
-#       # 安装项目依赖
-#       pip install -r requirements.txt
-#       # 退出任务
-#       exit
-
-# vscode:
-#   extensions:
-#     - ms-python.python
-#     - esbenp.prettier-vscode
-#     - ms-toolsai.jupyter
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+# 使用一个带有 Python 3.6 的预构建镜像
+image:
+       gitpod/workspace-full:latest
 tasks:
   - name: "install requirements"
     command: |
+      # 更新 pip
       pip install -U pip
+      # 安装 pyenv 并安装 Python 3.6.9
+      pyenv install 3.6.9
+      # 切换到 Python 3.6.9
+      pyenv global 3.6.9
+      # 再次更新 pip
+      pip install -U pip
+      # 安装 yapf 格式化工具
       pip install yapf
+      # 安装项目依赖
       pip install -r requirements.txt
-      pyenv install 3.6.0
-      pyenv global 3.6.0
-      # pyenv virtualenv 3.6.0 my-env
-      python3 -m venv my-env
-      # 激活虚拟环境
-      source my-env/bin/activate
-      # pyenv activate my-env
-      pip install --upgrade pip
-      pip install tensorflow
+      # 退出任务
       exit
 
 vscode:
@@ -48,4 +25,5 @@ vscode:
     - ms-python.python
     - esbenp.prettier-vscode
     - ms-toolsai.jupyter
+
 
