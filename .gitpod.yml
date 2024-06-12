@@ -7,10 +7,10 @@ tasks:
     command: |
       # 更新 pip
       pip install -U pip
-      # 安装 pyenv 并安装 Python 3.6.0
-      pyenv install 3.6.0
-      # 切换到 Python 3.6.0
-      pyenv global 3.6.0
+      # 安装 pyenv 并安装 Python 3.6.9
+      pyenv install 3.6.9
+      # 切换到 Python 3.6.9
+      pyenv global 3.6.9
       # 再次更新 pip
       pip install -U pip
       # 安装 yapf 格式化工具
