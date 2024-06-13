@@ -48,8 +48,8 @@ tasks:
       source tf1_env/bin/activate
       # 确保虚拟环境使用正确的 Python 版本
       pyenv local 3.6.0
-      # 安装 TensorFlow 1.x 版本
-      pip install tensorflow==1.15
+      # # 安装 TensorFlow 1.x 版本
+      # pip install tensorflow==1.15
       # 安装项目依赖
       pip install -r requirements.txt
       # 保持虚拟环境的激活状态
