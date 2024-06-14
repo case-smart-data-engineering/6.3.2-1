@@ -131,6 +131,7 @@ tasks:
       pip install pytorch-transformers==1.2.0
       pip install cached-property==1.5.2
       pip install overrides==7.3.1
+      pip install protobuf==3.20.0
       pip install tensorflow==1.15.0
       pip install pytorch-crf -i https://pypi.tuna.tsinghua.edu.cn/simple/
 
