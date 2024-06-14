@@ -96,7 +96,7 @@ tasks:
       # 安装 yapf 格式化工具
       pip install yapf
       # 安装项目依赖
-      pip install -r requirements.txt
+      pip install pytest
       # 退出任务
       exit
 
