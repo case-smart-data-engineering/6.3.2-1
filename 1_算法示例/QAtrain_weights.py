@@ -47,23 +47,15 @@ flags = tf.compat.v1.flags
 logging = tf.compat.v1.logging
 
 # -----------------------定义参数---------------------------
-flags.DEFINE_string(
-    "model", "small",
-    "模型的类型,可以选择: small, medium, large.")
-
-flags.DEFINE_string("data_path", None,
-                    "train/test数据存储的路径")
-flags.DEFINE_string("save_path", "./model_weight/model_weights",
-                    "模型保存的位置")
-flags.DEFINE_bool("use_fp16", False,
-                  "Train using 16-bit floats instead of 32bit floats")
-flags.DEFINE_bool(
-    "ifcontinue",True,
-    "是开始训练还是继续训练")
-flags.DEFINE_string(
-    "data_type","1",
-    "选择训练的数据类型")
+flags = tf.app.flags
 FLAGS = flags.FLAGS
+
+flags.DEFINE_string("model", "small", "模型的类型,可以选择: small, medium, large.")
+flags.DEFINE_string("data_path", "./tasks_1-20_v1-2/en/", "train/test数据存储的路径")
+flags.DEFINE_string("save_path", "./model_weight/model_weights", "模型保存的位置")
+flags.DEFINE_bool("use_fp16", False, "Train using 16-bit floats instead of 32bit floats")
+flags.DEFINE_bool("ifcontinue", True, "是开始训练还是继续训练")
+flags.DEFINE_string("data_type", "1", "选择训练的数据类型")
 
 # 数据类型是float16还是float32
 def data_type():

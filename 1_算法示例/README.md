@@ -4,9 +4,8 @@
 
 1. 按 `CTRL + P` 打开命令行面板，输入 "terminal: Create New Terminal" 打开一个命令行终端.
 2. 在命令行里输入 `cd 1_算法示例` 并按 `ENTER` 进入"算法示例"目录。
-3. 在命令行里输入 `python QAtrain_weights.py --data_path=./tasks_1-20_v1-2/en/ --model=small --ifcontinue=False --data_type=1` 按 `ENTER` 运行训练程序。
-4. 在命令行里输入 `python QAanswer.py --data_path=./tasks_1-20_v1-2/en/ --model=small --data_type=1` 按 `ENTER` 运行测试程序。
-5. 在命令行里输入 `John went back to the bathroom.
+3. 在命令行里输入 `python solution.py` 按 `ENTER` 运行测试程序。
+4. 在命令行里输入 `John went back to the bathroom.
 Mary travelled to the bathroom.
 Where is John?` 按两次`ENTER`  查询结果。
 
