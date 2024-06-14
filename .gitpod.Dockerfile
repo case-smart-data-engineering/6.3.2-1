@@ -20,6 +20,9 @@ RUN sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3
 # 安装TensorFlow 1.15.0
 RUN python3.7 -m pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow_cpu-1.15.0-cp37-cp37m-manylinux2010_x86_64.whl
 
+# 添加安装脚本路径到PATH
+ENV PATH="/workspace/.pyenv_mirror/user/current/bin:$PATH"
+
 # 清理
 RUN sudo apt-get clean && \
     sudo rm -rf /var/lib/apt/lists/*
