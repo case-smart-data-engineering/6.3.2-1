@@ -99,11 +99,15 @@
 #     - esbenp.prettier-vscode
 #     - ms-toolsai.jupyter
 
-
 image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: python3.7 -m pip install -r requirements.txt
-    command: python3.7 --version
+  - init: |
+      python3.7 -m venv myenv
+      source myenv/bin/activate
+      pip install -r requirements.txt
+    command: |
+      source myenv/bin/activate
+      python3.7 --version
 
