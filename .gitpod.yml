@@ -62,18 +62,37 @@
 #     - ms-toolsai.jupyter
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 
+# tasks:
+#   - name: "install requirements"
+#     command: |
+#       pip install -U pip
+#       pip install yapf
+#       pip install -r requirements.txt
+#       pyenv install 3.6.0
+#       pyenv virtualenv 3.6.0 my-env
+#       pyenv activate my-env
+#       pip install --upgrade pip
+#       exit
+# #      pip install tensorflow
+# vscode:
+#   extensions:
+#     - ms-python.python
+#     - esbenp.prettier-vscode
+#     - ms-toolsai.jupyter
+
+image:
+       gitpod/workspace-full:latest
 tasks:
   - name: "install requirements"
     command: |
       pip install -U pip
+      pyenv install 3.8.0
+      pyenv global 3.8.0
+      pip install -U pip
       pip install yapf
       pip install -r requirements.txt
-      pyenv install 3.6.0
-      pyenv virtualenv 3.6.0 my-env
-      pyenv activate my-env
-      pip install --upgrade pip
       exit
-#      pip install tensorflow
+
 vscode:
   extensions:
     - ms-python.python
